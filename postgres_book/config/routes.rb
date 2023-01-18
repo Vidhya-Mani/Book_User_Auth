@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :author
   resources :bookname
   resources :bookuser
+  resources :bookslogin
+  resources :bookslogout
 end
