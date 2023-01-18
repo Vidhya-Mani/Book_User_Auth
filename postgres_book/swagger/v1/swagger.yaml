@@ -1,0 +1,185 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/author":
+    get:
+      summary: list authors
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create author
+      responses:
+        '200':
+          description: successful
+  "/author/new":
+    get:
+      summary: new author
+      responses:
+        '200':
+          description: successful
+  "/author/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit author
+      responses:
+        '200':
+          description: successful
+  "/author/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show author
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update author
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update author
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete author
+      responses:
+        '200':
+          description: successful
+  "/bookname":
+    get:
+      summary: list booknames
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create bookname
+      responses:
+        '200':
+          description: successful
+  "/bookname/new":
+    get:
+      summary: new bookname
+      responses:
+        '200':
+          description: successful
+  "/bookname/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit bookname
+      responses:
+        '200':
+          description: successful
+  "/bookname/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show bookname
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update bookname
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update bookname
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete bookname
+      responses:
+        '200':
+          description: successful
+  "/bookstock":
+    get:
+      summary: list bookstocks
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create bookstock
+      responses:
+        '200':
+          description: successful
+  "/bookstock/new":
+    get:
+      summary: new bookstock
+      responses:
+        '200':
+          description: successful
+  "/bookstock/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit bookstock
+      responses:
+        '200':
+          description: successful
+  "/bookstock/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show bookstock
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update bookstock
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update bookstock
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete bookstock
+      responses:
+        '200':
+          description: successful
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
