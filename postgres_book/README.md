@@ -1,8 +1,8 @@
-### Flow of control from login to logout! 
+## Flow of control from login to logout! 
 
-Post -> http://127.0.0.1:3001/bookslogin -> User exist! Login successfull! 
+<ul>Post -> http://127.0.0.1:3001/bookslogin -> User exist! Login successfull! 
 
-## Cookie is generated and passed to browser! 
+### Cookie is generated and passed to browser! 
 Only if the session_id is generated the user can perform CRUD operations on Bookstock. The user is now authorised to perform below actions:
 Get  -> http://127.0.0.1:3001/bookstock -> displays all books.
 Get -> http://127.0.0.1:3001/bookstock/5 -> displays individual books.
