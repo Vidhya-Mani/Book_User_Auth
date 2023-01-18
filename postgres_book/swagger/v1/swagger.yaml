@@ -120,6 +120,122 @@ paths:
       responses:
         '200':
           description: successful
+  "/bookslogin":
+    get:
+      summary: list bookslogins
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create bookslogin
+      responses:
+        '200':
+          description: successful
+  "/bookslogin/new":
+    get:
+      summary: new bookslogin
+      responses:
+        '200':
+          description: successful
+  "/bookslogin/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit bookslogin
+      responses:
+        '200':
+          description: successful
+  "/bookslogin/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show bookslogin
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update bookslogin
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update bookslogin
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete bookslogin
+      responses:
+        '200':
+          description: successful
+  "/bookslogout":
+    get:
+      summary: list bookslogouts
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create bookslogout
+      responses:
+        '200':
+          description: successful
+  "/bookslogout/new":
+    get:
+      summary: new bookslogout
+      responses:
+        '200':
+          description: successful
+  "/bookslogout/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit bookslogout
+      responses:
+        '200':
+          description: successful
+  "/bookslogout/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show bookslogout
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update bookslogout
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update bookslogout
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete bookslogout
+      responses:
+        '200':
+          description: successful
   "/bookstock":
     get:
       summary: list bookstocks
@@ -175,6 +291,64 @@ paths:
           description: successful
     delete:
       summary: delete bookstock
+      responses:
+        '200':
+          description: successful
+  "/bookuser":
+    get:
+      summary: list bookusers
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create bookuser
+      responses:
+        '200':
+          description: successful
+  "/bookuser/new":
+    get:
+      summary: new bookuser
+      responses:
+        '200':
+          description: successful
+  "/bookuser/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit bookuser
+      responses:
+        '200':
+          description: successful
+  "/bookuser/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show bookuser
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update bookuser
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update bookuser
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete bookuser
       responses:
         '200':
           description: successful
